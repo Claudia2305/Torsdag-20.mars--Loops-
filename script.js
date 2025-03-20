@@ -18,15 +18,22 @@ console.log('Blast off!');
 */
 // SKRIV UNDER HER
 
+let countdown = 5;
+
+while (countdown > 0) {
+  console.log(`Countdown: ${countdown}`);
+  countdown--;
+}
+
+console.log('Blast off!');
+
 /*
 //OPPGAVE.2, For loop
 1. Gå til linje utenfor kommentar og skriv av for loopen, 
 se på console.log hva som skjer
 2. Vi går igjennom koden når alle har skrevet ferdig
 
-
 KODE DERE SKAL SKRIVE AV:
-
 const number = 7;
 
 for (let i = 1; i <= 10; i++) {
@@ -34,6 +41,21 @@ for (let i = 1; i <= 10; i++) {
 }
 */
 // SKRIV UNDER HER
+
+let countup = 0;
+
+while (countup < 10) {
+  console.log(`Countup: ${countup}`);
+  countup++;
+}
+
+console.log('Blast off!');
+
+const number = 6;
+
+for (let i = 1; i <= 10; i++) {
+  console.log(`${number} x ${i} = ${number * i}`);
+}
 
 /*
 //OPPGAVE.3, forEach
@@ -51,6 +73,19 @@ shoppingList.forEach((item) => {
 });
 */
 // SKRIV UNDER HER
+
+let shoppingList = ['milk', 'bread', 'fish', 'egg'];
+
+shoppingList.forEach((item) => {
+  console.log(item);
+});
+
+shoppingList.forEach((item) => {
+  let newElement = document.createElement('h1');
+  newElement.textContent = item;
+  document.body.appendChild(newElement);
+  });
+
 
 /*
 //OPPGAVE.4, map
@@ -70,20 +105,13 @@ console.log(numbers);
 */
 // SKRIV UNDER HER
 
-let countdown = 5;
+const numbers = [1, 2, 3];
+const doubled = numbers.map((number) => number * 2);
 
-while (countdown > 0) {
-  console.log(`Countdown: ${countdown}`);
-  countdown--;
-}
+console.log('this is doubleArray:' + doubled);
+console.log('this is original Array:' + numbers);
 
-console.log('Blast off!');
-
-let countdown = 0;
-
-while (countdown > 10) {
-  console.log(`Countdown: ${countdown}`);
-  countdown++;
-}
-
-console.log('Blast off!');
+/*/ dette er likt dette: 
+for (let i = 1; i <= 10; i++) {
+  console.log(`${number} x ${i} = ${number * i}`);}
+/*/
